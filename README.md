@@ -1,4 +1,5 @@
-# MicroServices
+<h1 align="center">MicroServices</h1>
+<p align="center">
 
 1. Установить docker и docker-compose
 2. Чтобы запустить в тервинале нужно ввести 
