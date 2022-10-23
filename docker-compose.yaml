@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+
+    backend-service:
+        environment:
+            API_SERVICE_HOST: model-torchserve-service
+        build: backend-service
+        ports:
+            - 8000:8000
+
+    model-torchserve-service:
+        build:
+          context: model-torchserve-service
+          args:
+                BASE_IMAGE: ubuntu:18.04
+        ports:
+            - 8080:8080
+        volumes:
+            - ./:/app
