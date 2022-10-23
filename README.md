@@ -19,9 +19,9 @@ $> docker-compose up -d
 -- Stop all services
 $> docker-compose down
 
--- Stop and remove all services, images and volumes
-$> docker-compose down -v --rmi all --volumes
+-- Stop and remove all services and images
+$> docker-compose down -v --rmi all
 
--- Remove all unused containers, networks, images and volumes
-$> docker system prune --volumes
+-- Remove all unused containers, networks and images
+$> docker system prune
 ```
