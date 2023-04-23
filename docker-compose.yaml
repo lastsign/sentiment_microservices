@@ -6,7 +6,7 @@ services:
             API_SERVICE_HOST: model-torchserve-service
         build: backend-service
         ports:
-            - 8000:8000
+            - 80:8000
 
     model-torchserve-service:
         build:
